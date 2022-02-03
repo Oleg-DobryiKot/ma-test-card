@@ -1,0 +1,8 @@
+@import url("./__project/header__project.css");
+
+.header {
+  position: relative;
+  min-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+}

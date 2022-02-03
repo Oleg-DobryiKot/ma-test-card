@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test">
+  <meta name="keywords" content="test">
+  <meta name="author" content="Matveev Oleg">
+  <title>Test for MA Agency - Card 4</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <p class="header__project">Test project for MA-Agency 2022</p>
+    </header>
+
+    <main class="content">
+      <section class="cards">
+        <!--
+          can be done with <template> but later
+        -->
+        <div class="card">
+          <div class="card__item-description">
+            <h1 class="card__title">Vintage Paint Bucket Retro Paper</h1>
+            <div class="card__price">
+              <p class="card__price-title">Price</p>
+              <div class="card__price-container">
+                <span class="card__price-currency">$</span>
+                <p class="card__price-value">689</p>
+                <span class="card__price-cents">99</span>
+              </div>
+            </div>
+          <div>
+          <div class="card__slider">
+            <div class="card__slider-item">
+              <img class="card__slider-img" src="./images/slide-blue.png" alt="test slide in blue color">
+              <div class="card__slider-text">Look at this bucket in blue</div>
+            </div>
+            <div class="card__slider-item">
+              <img class="card__slider-img" src="./images/slide-red.png" alt="test slide in red color">
+              <div class="card__slider-text">Look at this bucket in red</div>
+            </div>
+            <div class="card__slider-item">
+              <img class="card__slider-img" src="./images/slide-green.png" alt="test slide in green color">
+              <div class="card__slider-text">Look at this bucket in green</div>
+            </div>
+            <button class="card__slider-prev" onclick="showPrevSlide()">prev</button>
+            <button class="card__slider-next" onclick="showNextSlide()">next</button>
+          </div>
+          <div class="card__item-features">
+            <div class="card__item-description">
+              <p class="card__item-text">bla-bla text of card item description</p>
+            </div>
+            <div class="card__item-colors">
+              <p class="card__item-color-title">Fill color</p>
+              <div class="card__item-color-btn">
+                <button class="card__item-color btn-blue" onclick="showSlide(1)">1</button>
+                <button class="card__item-color btn-red" onclick="showSlide(2)">2</button>
+                <button class="card__item-color btn-green" onclick="showSlide(3)">3</button>
+              </div>
+            </div>
+            <div class="card__item-line"></div>
+            <div class="card__item-sizes">
+              <p class="card__item-size-title">Bucket size</p>
+              <ul class="card__item-size-list">
+                <li class="card__item-size size-active">S</li>
+                <li class="card__item-size">M</li>
+                <li class="card__item-size">L</li>
+                <li class="card__item-size">XL</li>
+              </ul>
+            </div>
+            <div class="card__item-line"></div>
+            <div class="card__item-sizes">
+              <p class="card__item-size-title">Fill size</p>
+              <ul class="card__item-size-list">
+                <li class="card__item-size size-active">24</li>
+                <li class="card__item-size">26</li>
+                <li class="card__item-size">28</li>
+              </ul>
+            </div>
+            <button class="card__order-btn">ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__author">&copy; 2022. Matveev Oleg</p>
+    </footer>
+  </div>
+  <script src="./scripts/slider.js"></script>
+</body>
+
+</html>
