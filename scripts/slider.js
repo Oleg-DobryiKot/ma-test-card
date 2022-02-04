@@ -46,8 +46,6 @@ const sendOrderButton = document.querySelector('.card__order-btn');
 
 const popupCloseButton = document.querySelector('.popup__close');
 
-// const formElements = ;
-
 function openPopup(popup) {
   popup.classList.add('popup_is-opened');
 // debugger;
@@ -55,33 +53,34 @@ function openPopup(popup) {
 
   function closePopup(popup) {
     popup.classList.remove('popup_is-opened');
+
+    document.removeEventListener("keydown", closeByEscape);
+    popupCloseButton.removeEventListener('click', closeByButton);
+    popup.removeEventListener('click', closeByOverlay);
+    popupForm.removeEventListener('submit', handleSave);
   }
 
   function closeByEscape(event) {
     if (event.key === "Escape") {
       closePopup(popup);
-      document.removeEventListener("keydown", closeByEscape);
     }
   }
 
   function closeByButton() {
     closePopup(popup);
-    popupCloseButton.removeEventListener('click', closeByButton);
   }
 
   function closeByOverlay(event) {
     if (event.target === popup) {
         closePopup(popup);
-        popup.removeEventListener('click', closeByOverlay);
     }
   }
 
-  document.addEventListener("keydown", closeByEscape);
-  popupCloseButton.addEventListener('click', closeByButton);
-  popup.addEventListener('click', closeByOverlay);
-
-  function sendPopupCardOrder() {
-    //   debugger;
+  function handleSave(event) {
+        // debugger;
+    event.preventDefault();
+    const formData = new FormData(popupForm);
+    const [name, phone] = Array.from(formData.values());
     const elementModel = {};
   
     if (cardInputName.value !== '') {
@@ -89,13 +88,14 @@ function openPopup(popup) {
     //   elementModel.link = cardInputLink.value;
       sendOrder(elementModel);
     }
-    closePopup(cardPopup);
+
+    closePopup(popup);
   }
 
-  popupForm.addEventListener('submit', event => {
-    event.preventDefault();
-    savePopupCardElement();
-  });
+  document.addEventListener("keydown", closeByEscape);
+  popupCloseButton.addEventListener('click', closeByButton);
+  popup.addEventListener('click', closeByOverlay);
+  popupForm.addEventListener('submit', handleSave);
 }
   
 sendOrderButton.addEventListener('click', () => {
