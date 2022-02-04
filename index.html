@@ -36,19 +36,19 @@
           </div>
           <div class="card__slider">
             <div class="card__slider-item">
-              <img class="card__slider-img" src="./images/slide-blue.png" alt="test slide in blue color">
+              <img class="card__slider-img fade-img" src="./images/slide-blue.png" alt="test slide in blue color">
               <div class="card__slider-text">Look at this bucket in blue</div>
             </div>
             <div class="card__slider-item">
-              <img class="card__slider-img" src="./images/slide-red.png" alt="test slide in red color">
+              <img class="card__slider-img fade-img" src="./images/slide-red.png" alt="test slide in red color">
               <div class="card__slider-text">Look at this bucket in red</div>
             </div>
             <div class="card__slider-item">
-              <img class="card__slider-img" src="./images/slide-green.png" alt="test slide in green color">
+              <img class="card__slider-img fade-img" src="./images/slide-green.png" alt="test slide in green color">
               <div class="card__slider-text">Look at this bucket in green</div>
             </div>
-            <button class="card__slider-prev" onclick="showPrevSlide()">prev</button>
-            <button class="card__slider-next" onclick="showNextSlide()">next</button>
+            <button class="card__slider-prev" onclick="showPrevSlide()">&#8592;</button>
+            <button class="card__slider-next" onclick="showNextSlide()">&#8594;</button>
           </div>
           <div class="card__item-features">
             <div class="card__item-observe">
@@ -60,9 +60,9 @@
               <div class="card__item-colors container-size">
                 <p class="card__item-color-title card__tips-title">Fill color</p>
                 <div class="card__item-color-btn">
-                  <button class="card__item-color btn-blue" onclick="showSlide(1)">1</button>
-                  <button class="card__item-color btn-red" onclick="showSlide(2)">2</button>
-                  <button class="card__item-color btn-green" onclick="showSlide(3)">3</button>
+                  <button class="card__item-color btn-blue" onclick="showSlide(1)"></button>
+                  <button class="card__item-color btn-red" onclick="showSlide(2)"></button>
+                  <button class="card__item-color btn-green" onclick="showSlide(3)"></button>
                 </div>
               </div>
               <div class="card__item-line"></div>
@@ -90,7 +90,23 @@
         </div>
       </section>
     </main>
-
+    <section class="popup popup_type-card">
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+        <h3 class="popup__title">Order now for best price!</h3>
+        <form name="inputFormCard" class="popup__input-form popup__input-form_type-card" novalidate>
+          <input type="text" placeholder="You name" name="name" class="popup__input-text popup__input-text_title"
+            minlength="2" maxlength="30" required>
+          <span class="popup__error popup__error_name">You must fill this field</span>
+          <input type="text" placeholder="You phone number" name="link"
+            class="popup__input-text popup__input-text_link" required>
+          <span class="popup__error popup__error_link">We cannot connect without phone!</span>
+          <button type="submit" class="popup__input-btn popup__input-btn_type-card">
+            Send order
+          </button>
+        </form>
+      </div>
+    </section>
     <footer class="footer">
       <p class="footer__author">&copy; 2022. Matveev Oleg</p>
     </footer>

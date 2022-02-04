@@ -5,3 +5,19 @@
   max-width: 280px;
   color: var(--title-color, #212121);
 }
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .card__title {
+    font-size: 1.8em;
+    margin-right: 15px;
+    max-width: 65%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .card__title {
+    max-width: 95%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

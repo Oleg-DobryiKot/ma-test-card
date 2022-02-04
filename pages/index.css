@@ -7,6 +7,11 @@
 @import url("../blocks/cards/cards.css");
 @import url("../blocks/card/card.css");
 @import url('../blocks/anime/rotation.css');
+@import url("../blocks/anime/fade.css");
+@import url("../blocks/popup/popup.css");
+@import url("../blocks/popup/_is-opened/popup_is-opened.css");
+@import url("../blocks/popup/__error/_visible/popup__error_visible.css");
+@import url("../blocks/popup/__input-btn/_disabled/popup__input-btn_disabled.css");
 @import url("../blocks/footer/footer.css");
 
 :root {

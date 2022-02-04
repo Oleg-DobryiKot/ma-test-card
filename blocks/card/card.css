@@ -32,3 +32,9 @@
 .container-size {
   width: calc(50%/3);
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .card {
+    padding: 2rem 2rem;
+  }
+}

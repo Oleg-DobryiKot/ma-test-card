@@ -7,3 +7,10 @@
   line-height: 1.2;
   font-weight: normal;
 }
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .card__price {
+    align-items: center;
+    margin-top: 7px;
+  }
+}

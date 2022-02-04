@@ -1,5 +1,81 @@
 .card__slider {
     margin-top: -115px;
-    width: 100%;
+    width: 85%;
     position: relative;
+}
+
+.active {
+    background-image: url('../../../images/shape.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+
+.card__slider-prev, .card__slider-next {
+    position: absolute;
+    top: 50%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 3px solid #FFC80A;
+    background: transparent;
+    opacity: 0.3;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card__slider-next {
+    right: -100px;
+}
+
+.card__slider-prev {
+    left: 40px
+}
+
+.card__slider-prev:hover, 
+.card__slider-next:hover {
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    .card__slider-prev {
+        left: 30px;
+    }
+    .card__slider-next {
+        right: -80px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .card__slider-prev, .card__slider-next {
+        top: 33%
+    }
+
+    .card__slider-prev {
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .card__slider-next {
+        right: -75px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    .card__slider-next {
+        right: -45px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .card__slider {
+        margin-top: 15px;
+    }
 }
