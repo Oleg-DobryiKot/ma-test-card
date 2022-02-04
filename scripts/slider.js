@@ -1,5 +1,7 @@
 let slideIndex = 1;
 
+const formURL = "https://ip-dev.art/order.php";
+
 function showSlideByNumber(slideNumber) {
     let i = 0;
     const slides = document.querySelectorAll('.card__slider-item');
