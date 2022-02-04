@@ -1,3 +1,22 @@
+@import url("__item-description/card__item-description.css");
+@import url("__title/card__title.css");
+@import url("__price/card__price.css");
+@import url("__price-container/card__price-container.css");
+@import url("__price-title/card__price-title.css");
+@import url("__tips-title/card__tips-title.css");
+@import url("__price-currency/card__price-currensy.css");
+@import url("__price-cents/card__price-cents.css");
+@import url("__slider/card__slider.css");
+@import url("__slider-img/card__slider-img.css");
+@import url("__item-features/card__item-features.css");
+@import url("__item-observe/card__item-observe.css");
+@import url("__item-values/card__item-values.css");
+@import url("__item-line/card__item-line.css");
+@import url("__list/card__list.css");
+@import url("__order-btn/card__order-btn.css");
+@import url("__item-colors/card__item-colors.css");
+@import url("__item-color/card__item-color.css");
+
 .card {
   width: 100%;
   margin: 0 auto;
@@ -6,4 +25,10 @@
   border-radius: 3px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
   padding: 4rem 5rem;
+  font-family: 'Arvo';
+  font-style: normal;
+}
+
+.container-size {
+  width: calc(50%/3);
 }

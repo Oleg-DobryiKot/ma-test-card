@@ -1,0 +1,9 @@
+.card__tips-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--tip-color,#9FA3A7);
+  letter-spacing: 2.4px;
+  line-height: 1.2;
+  font-family: 'Montserrat';
+}

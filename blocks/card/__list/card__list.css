@@ -1,0 +1,28 @@
+.card__list {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card__list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__list li:hover {
+  border: 2px solid yellow;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}

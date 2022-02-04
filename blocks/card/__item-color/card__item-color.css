@@ -1,0 +1,18 @@
+.card__item-color {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+.btn-blue {
+    background-color: #8EB9D2;
+}
+
+.btn-red {
+    background-color: #FC3571;
+}
+
+.btn-green {
+    background-color: #70B540;
+}

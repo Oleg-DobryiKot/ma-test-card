@@ -16,7 +16,7 @@ function showSlideByNumber(slideNumber) {
         colors[i].className = colors[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    colors[slideIndex - 1].className += "active";
+    colors[slideIndex - 1].className += " active";
 }
 
 function showNextSlide() {

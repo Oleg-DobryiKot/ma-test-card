@@ -1,0 +1,18 @@
+.card__item-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+  .card__item-features {
+    flex-flow: column;
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card__item-features {
+    min-height: 250px;
+  }
+}
